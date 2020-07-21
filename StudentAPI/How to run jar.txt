@@ -1,0 +1,35 @@
+How to Run Student API
+--------
+
+Copy jar file in C: drive
+
+C:\>java -jar studentApp.jar --server.port=8085
+
+(OR)
+
+C:\>java -jar  --add-modules java.xml.bind  studentApp.jar --server.port=8085
+
+
+Student API Request URL'S
+-------------------
+=> Get list of students: 
+	http://localhost:8085/student/list 
+
+=> Post(Create) a new student : 
+	http://localhost:8085/student
+
+	Body:
+		{
+      		  "id": 101,
+      		  "firstName": "xxxxxx",
+       		 "lastName": "xxxxxx",
+       		 "email": "abcxyz@risusDonecegestas.edu",
+       		 "programme": "Manger",
+       		 "courses": [
+        			    "Java",
+        			    "Selenium"
+        		   ]
+    		}
+
+=> Get specific Studetn Record: 
+	http://localhost:8085/student/101

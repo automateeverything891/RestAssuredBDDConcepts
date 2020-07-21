@@ -1,0 +1,24 @@
+Dependencies
+	1.REST Assured
+	2.JSON Schema Validator 
+	3.JSON Path
+	4.XML Path
+	5.TestNG
+	6.Java hamcrest
+	7.Hancrest Core
+	8.Hamcrest-Library
+	
+BDD Keywords
+
+	given()- Used to set cookies, add authentication, set header info,etc
+
+	when()- For request Methods like get,post,put,delete, etc
+
+	then()- To Validate Status Codes,Extract Response,extract headers,cookies,response body,etc
+
+Always import below static packages
+
+	import static io.restassured.RestAssured.*;
+	import static org.hamcrest.Matchers.*;
+	
+
